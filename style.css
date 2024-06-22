@@ -1,13 +1,14 @@
+/* Estilos globales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Navbar Styles */
+/* Estilos de la barra de navegación */
 .navbar {
-    background-color: #333;
-    color: white;
+    background-color: #404041;
+    color: #f6f6f6;
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
@@ -31,14 +32,15 @@ body {
 }
 
 .navbar a {
-    color: white;
+    color: #f6f6f6;
     text-decoration: none;
     position: relative;
     padding-bottom: 0.5rem;
+    transition: color .3s;
 }
 
 .navbar a:hover {
-    color: #00aeff;
+    color: #4D92DF;
 }
 
 .navbar a::after {
@@ -46,7 +48,7 @@ body {
     display: block;
     width: 0;
     height: 2px;
-    background: #A9ABA9;
+    background: #902449;
     transition: width .3s;
 }
 
@@ -55,9 +57,9 @@ body {
     transition: width .3s;
 }
 
-/* Banner Styles */
+/* Estilos del banner */
 .banner {
-    background-color: #f4f4f4;
+    background-color: #fff;
     text-align: center;
     padding: 4rem 1rem;
 }
@@ -65,15 +67,17 @@ body {
 .banner h2 {
     margin: 0;
     font-size: 2rem;
+    color: #000000;
 }
 
-/* Footer Styles */
+/* Estilos del footer */
 .footer {
-    background-color: #333;
-    color: white;
+    background-color: #404041;
+    color: #f6f6f6;
     text-align: center;
     padding: 2rem 1rem;
 }
+
 /* Estilos para el menú móvil */
 .mobile-menu {
     display: none;
@@ -89,7 +93,7 @@ body {
 
 .mobile-menu ul {
     list-style: none;
-    background: white;
+    background: #f6f6f6;
     padding: 2rem;
     border-radius: 8px;
     text-align: center;
@@ -100,26 +104,12 @@ body {
 }
 
 .mobile-menu a {
-    color: black;
+    color: #404041;
     text-decoration: none;
     font-size: 1.5rem;
 }
 
-
-/* Estilos para el overlay */
-.overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 9;
-}
-
-
-/* Media Queries */
+/* Media Query para dispositivos móviles */
 @media (max-width: 768px) {
     .navbar ul {
         display: none;
@@ -137,43 +127,67 @@ body {
         display: block;
         width: 25px;
         height: 3px;
-        background-color: white;
+        background-color: #f6f6f6;
         margin: 5px 0;
     }
-.navbar ul.active {
-    display: flex;
-    justify-content: center; /* Centra los elementos horizontalmente en el contenedor */
-    align-items: center; /* Centra los elementos verticalmente en el contenedor */
-    position: absolute;
-    top: 60px;
-    left: 50%; /* Mueve el inicio del contenedor al centro del padre */
-    transform: translateX(-50%); /* Centra el contenedor respecto a su posición actual */
-    background-color: #767373;
-    width: 90%;
-    padding: 1rem 0;
-    z-index: 10;
-    border-radius: 20px;
-}
+
+    .navbar ul.active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #767373;
+        width: 90%;
+        padding: 1rem 0;
+        z-index: 10;
+        border-radius: 20px;
+        animation: slideDown .35s forwards;
+    }
+
+    @keyframes slideDown {
+        from { transform: translateY(-20px) translateX(-50%); opacity: 0; }
+        to { transform: translateY(0) translateX(-50%); opacity: 1; }
+    }
 
     .navbar ul.active li {
         margin: 1rem 0;
     }
-   
+
     .navbar ul.active li {
-        text-decoration: underline rgb(71, 69, 69);
+        text-decoration: underline #ddd;
+        transition: text-decoration .3s;
+    }
+
+       .navbar ul.active li:hover {
+        text-decoration: underline #4D92DF;
+    }
+    /* Estilos para el overlay */
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 9;
     }
 
     .overlay.active {
         display: block;
     }
+
+
+
     .navbar a::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: none;
-    transition: width .3s;
-}
-
-
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: none;
+        transition: width .3s;
+    }
 }
