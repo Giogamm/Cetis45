@@ -105,6 +105,7 @@ body {
 }
 
 
+
 /* Estilos para el menú móvil */
 .mobile-menu {
     display: none;
@@ -135,6 +136,7 @@ body {
     text-decoration: none;
     font-size: 1.5rem;
 }
+
 
 /* Media Query para dispositivos móviles */
 @media (max-width: 768px) {
@@ -219,7 +221,34 @@ body {
     }
 
     .footer{
+        overflow: hidden;
         display: block;
         padding: 40px;
     }
+    .imagenFooter img{
+  height: 180px;
+}
+
+.imagenFooter{
+    display: grid;
+    justify-content: center;
+}
+
+.siguenos{
+    display: flex;
+    justify-content: center;
+    place-content: center;
+    flex-direction: column;
+}
+
+.siguenos img{
+    width: 30px;
+    height: 30px;
+      position: relative;
+    top: 10px;
+    right: 10px;
+}
+
+
+
 }
