@@ -1,6 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 /* Estilos globales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: montserrat, sans-serif, Arial;
     margin: 0;
     padding: 0;
 }
@@ -65,9 +69,10 @@ body {
 
 /* Estilos del banner */
 .banner {
-    background-color: #fff;
+    background-color: #d0d0d1;
     text-align: center;
     padding: 4rem 1rem;
+      border-bottom: 10px solid #5c5d5e;
 }
 
 .banner h2 {
@@ -76,6 +81,21 @@ body {
     color: #000000;
 }
 
+.rojoSec {
+    background-color: #878889; /* Color de fondo de la sección roja */
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-top: 5px solid #5c5d5e; /* Línea de separación superior */
+}
+
+/* contenido  */
+.container{
+margin: 40px 150px;
+
+}
 /* Estilos del footer */
 .footer {
     background-color: #404041;
@@ -198,6 +218,11 @@ body {
 
        .navbar ul.active li:hover {
         text-decoration: underline #4D92DF;
+    }
+
+    .container{
+        margin: 0;
+        padding: 20px;
     }
     /* Estilos para el overlay */
     .overlay {
