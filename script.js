@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "CETis 45 CAMPEÓN DE VOLEIBOL VARONIL",
       description:
         "CETis 45 CAMPEÓN DE VOLEIBOL VARONIL en el torneo de la Semana del Estudiante. ",
-      link: "#",
+      link: "https://www.facebook.com/share/p/5PpUyFQjNwfUWY1M/",
       principal: true,
     },
     {
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "El crecimeinto de las ofertas de empleo",
       description:
         "El Ing. Carlos Baltazar Oliva,  del Tecnológico Nacional de México Campus Costa Grande, impartió el tema: EL CRECIMIENTO DE LA OFERTA DE LOS EMPLEOS DIGITALES, dentro el marco de la Semana Nacional de Vinculación con el Sector Productivo DGETI 2024.",
-      link: "#",
+      link: "https://www.facebook.com/share/p/UEDMUa3P8ZYXmhob/",
       principal: false,
     },
     {
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "Exámen de diagnóstico",
       description:
         "El jueves se estará aplicando el examen de diagnóstico a los alumnos de nuevo ingreso, para determinar su nivel de conocimientos en las materias de matemáticas, español e inglés.",
-      link: "#",
+      link: "https://www.facebook.com/share/p/CEYyqFcMqQYw1rRJ/",
       principal: false,
     },
   ];
