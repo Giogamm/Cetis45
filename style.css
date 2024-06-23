@@ -18,12 +18,12 @@ body {
   position: sticky;
   top: 0;
   z-index: 9;
-    transform: translateY(0);
+  transform: translateY(0);
   transition: transform 0.3s ease-in-out;
 }
 .navbar-hidden {
-    transform: translateY(-100%);
-    transition: transform 0.3s ease-in-out;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
 }
 .navbar .logo h1 {
   margin: 0;
@@ -282,9 +282,8 @@ body {
 }
 
 /* quita los caracteres rarosq que tenia "&nbsp;" */
-.enlaces-internos li a span{
-    margin-left: 5px;
-    
+.enlaces-internos li a span {
+  margin-left: 5px;
 }
 .explicacion a {
   color: #000000;
@@ -337,11 +336,11 @@ body {
 
 /* oferta educatica */
 
-.carreras-tecnicas-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 20px;
-    padding: 20px;
+.carreras-tecnicas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
 .carreras-tecnicas-grid .col-3 {
@@ -352,32 +351,29 @@ body {
   background-color: #f9f9f9;
   transition: 0.4s;
   width: 90%;
- 
 }
 
 .carreras-tecnicas-grid .col-3:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.col-3{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    
+.col-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 .col-3 img {
   width: 260px;
   height: auto;
-
 }
 
-.col-3 h3{
-    margin: 10px 0;
-    font-size: 1.5em;
- text-align: center;
+.col-3 h3 {
+  margin: 10px 0;
+  font-size: 1.5em;
+  text-align: center;
 }
 
 /* Media Query para dispositivos móviles */
@@ -525,32 +521,32 @@ body {
     width: 90%;
   }
 
-
-
   .carreras-tecnicas-grid {
-      grid-template-columns: repeat(2, 1fr); /* 2 columnas en dispositivos móviles */
- gap: 10px;
- padding: 0px;
- overflow: hidden;
- width: 100%;
- height: 100%;
- padding: 15px 0px;
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* 2 columnas en dispositivos móviles */
+    gap: 10px;
+    padding: 0px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    padding: 15px 0px;
   }
 
-.carreras-tecnicas-grid .col-3 img {
-       width: 100%;
-       height: 120px;
+  .carreras-tecnicas-grid .col-3 img {
+    width: 100%;
+    height: 120px;
     height: auto;
-    display: block; 
-   
-}
+    display: block;
+  }
 
-.carreras-tecnicas-grid .col-3 {
+  .carreras-tecnicas-grid .col-3 {
     width: 85%;
     padding: 10px;
-}
+  }
   .col-3 h3 {
-        font-size: 1.2em;
-        padding: 10px; 
-    }
+    font-size: 1.2em;
+    padding: 10px;
+  }
 }
