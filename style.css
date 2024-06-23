@@ -295,6 +295,7 @@ margin: 40px 150px;
         z-index: 10;
         border-radius: 20px;
         animation: slideDown .35s forwards;
+        top: 100px;
     }
 
     @keyframes slideDown {
