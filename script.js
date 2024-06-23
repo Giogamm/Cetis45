@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const noticias = [
     {
       image: "img/CampeonesDeBoleyball.jpg",
-      date: "Lunes, 20 / 01 / 2020",
+      date: "Lunes, 14 / 06 / 2024",
       title: "CETis 45 CAMPEÓN DE VOLEIBOL VARONIL",
       description:
         "CETis 45 CAMPEÓN DE VOLEIBOL VARONIL en el torneo de la Semana del Estudiante. ",
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       image: "img/AplicacionesDeLaInteligenciaArtificial.jpg",
-      date: "Jueves, 05 / 12 / 2019",
+      date: "Jueves, 03 / 05 / 2024",
       title: "El crecimeinto de las ofertas de empleo",
       description:
         "El Ing. Carlos Baltazar Oliva,  del Tecnológico Nacional de México Campus Costa Grande, impartió el tema: EL CRECIMIENTO DE LA OFERTA DE LOS EMPLEOS DIGITALES, dentro el marco de la Semana Nacional de Vinculación con el Sector Productivo DGETI 2024.",
