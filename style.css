@@ -48,7 +48,7 @@ body {
     display: block;
     width: 0;
     height: 2px;
-    background: #902449;
+    background: #DDD;
     transition: width .3s;
 }
 
