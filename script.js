@@ -75,3 +75,18 @@ document.addEventListener("DOMContentLoaded", function () {
     container.appendChild(noticiaElement);
   });
 });
+
+
+// oculta la barra de navegación cuando el usuario se desplaza hacia abajo y muestra la barra de navegación cuando el usuario se desplaza hacia arriba.
+let lastScrollY = window.scrollY;
+window.addEventListener("scroll", () => {
+  if (window.scrollY > lastScrollY) {
+    // El usuario está desplazándose hacia abajo, oculta la barra de navegación
+    document.querySelector(".navbar").classList.add("navbar-hidden");
+  } else {
+    // El usuario está desplazándose hacia arriba, muestra la barra de navegación
+    document.querySelector(".navbar").classList.remove("navbar-hidden");
+  }
+  // Actualiza la posición de desplazamiento anterior
+  lastScrollY = window.scrollY;
+});

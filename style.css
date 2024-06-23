@@ -18,8 +18,13 @@ body {
   position: sticky;
   top: 0;
   z-index: 9;
+    transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
 }
-
+.navbar-hidden {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
 .navbar .logo h1 {
   margin: 0;
   font-size: 1.5rem;
@@ -463,9 +468,9 @@ body {
   }
 
   .explicacion {
-    width: 100%;
+    width: 90%;
   }
   .enlaces-internos {
-    width: 100%;
+    width: 90%;
   }
 }
