@@ -525,20 +525,32 @@ body {
     width: 90%;
   }
 
+
+
   .carreras-tecnicas-grid {
       grid-template-columns: repeat(2, 1fr); /* 2 columnas en dispositivos móviles */
- gap: 40px;
+ gap: 10px;
  padding: 0px;
+ overflow: hidden;
+ width: 100%;
+ height: 100%;
+ padding: 15px 0px;
   }
 
 .carreras-tecnicas-grid .col-3 img {
        width: 100%;
+       height: 120px;
     height: auto;
-    display: block; /* Asegura que las imágenes no tengan márgenes por defecto */
+    display: block; 
+   
 }
 
 .carreras-tecnicas-grid .col-3 {
-    width: 100%;
+    width: 85%;
     padding: 10px;
 }
+  .col-3 h3 {
+        font-size: 1.2em;
+        padding: 10px; 
+    }
 }
