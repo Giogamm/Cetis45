@@ -75,8 +75,35 @@ body {
     background-color: #404041;
     color: #f6f6f6;
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
 }
+
+.imagenFooter img{
+  height: 220px;
+}
+
+.siguenos img{
+    width: 30px;
+    height: 30px;
+      position: relative;
+    top: 10px;
+   
+}
+
+.siguenos a{
+    margin: 0 15px;
+    text-decoration: none;
+    color: #f6f6f6;
+    padding-bottom: 0.5rem;
+    transition: color .3s;
+}
+
+.siguenos a:hover {
+    color: #4D92DF;
+}
+
 
 /* Estilos para el menú móvil */
 .mobile-menu {
@@ -189,5 +216,10 @@ body {
         height: 2px;
         background: none;
         transition: width .3s;
+    }
+
+    .footer{
+        display: block;
+        padding: 40px;
     }
 }
