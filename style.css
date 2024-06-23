@@ -536,4 +536,9 @@ body {
     height: auto;
     display: block; /* Asegura que las imágenes no tengan márgenes por defecto */
 }
+
+.carreras-tecnicas-grid .col-3 {
+    width: 100%;
+    padding: 10px;
+}
 }
