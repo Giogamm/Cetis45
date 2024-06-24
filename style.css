@@ -512,6 +512,38 @@ body {
     border-radius: 50%;
 }
 
+/* padres de familia */
+
+.familia-container {
+   display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.cajita{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+
+}
+
+.cajita a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.2em;
+    transition: color 0.3s;
+
+}
+
+.cajita a:hover{
+    color: #4d92df;
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
     .docentes-container {
@@ -766,4 +798,30 @@ body {
       left: -18px;
   }
 
+  
+.familia-container {
+   display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+  .cajita{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+
+}
+
+.cajita a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.2em;
+    transition: color 0.3s;
+
+}
 }
