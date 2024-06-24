@@ -761,10 +761,7 @@ body {
   }
 
   .carreras-tecnicas-grid {
-    grid-template-columns: repeat(
-      2,
-      1fr
-    ); /* 2 columnas en dispositivos móviles */
+ place-items: center;
     gap: 10px;
     padding: 0px;
     overflow: hidden;
