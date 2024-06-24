@@ -470,6 +470,78 @@ body {
  
 }
 
+/* docentes */
+
+.docentes-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.docentes-links {
+    width: 60%;
+}
+
+.docentes-link {
+    display: block;
+    background-color: #404041;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.docentes-link:hover {
+    background-color: #a52455;
+}
+
+.docentes-images {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 35%;
+}
+
+.docentes-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .docentes-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .docentes-links, .docentes-images {
+        width: 100%;
+    }
+
+    .docentes-links {
+        order: 2;
+    }
+
+    .docentes-images {
+        margin-bottom: 20px;
+    }
+
+    .docentes-link {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .docentes-image {
+        width: 80px;
+        height: 80px;
+    }
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
   .alumnos-section {
@@ -482,6 +554,8 @@ body {
     width: 100%;
   }
 }
+
+
 
 /* Media Query para dispositivos móviles */
 @media (max-width: 768px) {
