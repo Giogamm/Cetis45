@@ -93,3 +93,32 @@ window.addEventListener("scroll", () => {
     lastScrollY = window.scrollY;
   }
 });
+
+
+// corrige el desplazamiento de la barra de navegación al hacer clic en un enlace de navegación
+document.addEventListener("DOMContentLoaded", function() {
+  // Selecciona todos los enlaces dentro de #nav-links
+  document.querySelectorAll('#nav-links a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      // Previene el comportamiento por defecto del enlace
+      e.preventDefault();
+
+      // Determina el valor de offset basado en el ancho de la ventana
+      // Por ejemplo, asume un offset de 120px para escritorio y 60px para móviles
+      const offset = window.innerWidth <= 768 ? 30 : 120;
+
+      // Obtiene el elemento de destino basado en el atributo href del enlace
+      const targetId = this.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+
+      // Calcula la posición del elemento de destino y ajusta por la altura de la barra de navegación
+      const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
+
+      // Desplaza a la posición ajustada
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth' // añade un efecto de desplazamiento suave
+      });
+    });
+  });
+});
