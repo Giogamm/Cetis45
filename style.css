@@ -5,6 +5,7 @@ body {
   font-family: montserrat, sans-serif, Arial;
   margin: 0;
   padding: 0;
+    box-sizing: border-box;
 }
 
 /* Estilos de la barra de navegación */
@@ -739,6 +740,8 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px 35px;
+  position: relative;
+  left: -20px;
   
 }
 
@@ -756,6 +759,11 @@ body {
 @media (max-width: 480px) {
   .aspirantes-section {
     width: 100%;
+    
+  }
+
+  .alumnos-container{
+      left: -20px;
   }
 
 }
