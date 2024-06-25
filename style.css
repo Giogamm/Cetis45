@@ -602,6 +602,7 @@ body {
     width: 50%;
     height: 400px;
     margin-bottom: 40px;
+    overflow: hidden;
 }
 
 
