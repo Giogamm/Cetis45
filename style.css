@@ -438,6 +438,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px 100px;
+  place-items: center;
 }
 
 .alumnos-section {
@@ -831,19 +832,20 @@ body {
   margin: 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px 35px;
+  gap: 20px 55px;
   position: relative;
-  left: -20px;
+ 
   
 }
 
 .alumnos-section {
   background-color: #f0f0f0;
   padding: 0px;
-  width: 100%;
+  width: 110%;
   border-radius: 5px;
   margin-bottom: 20px;
   padding: 10px;
+      height: 90%;
 }
 
 
@@ -870,10 +872,13 @@ width: 100%;
     width: 100%;
     
   }
-/* en algunos celulares no se centra, se desborda */
-  .alumnos-container{
-      left: -18px;
-  }
+
+   .alumnos-container {
+
+  gap: 20px 45px;
+ 
+  
+}
 
   
 .familia-container {
