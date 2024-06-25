@@ -448,6 +448,41 @@ body {
   margin-bottom: 20px;
 }
 
+.alumnos-contenido{
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+.alumnos-section {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.alumnos-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #b3c7f7; /* Color de fondo deseado */
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.3s ease;
+
+}
+
+
+
+.alumnos-section:hover::after {
+  transform: scaleY(1);
+}
+
 .alumnos-title {
   font-weight: bold;
   display: block;
@@ -459,7 +494,7 @@ body {
 }
 
 .alumnos-title:hover {
-  color: blue;
+  color: #fff;
 }
 
 .alumnos-section p {
@@ -810,6 +845,7 @@ body {
   margin-bottom: 20px;
   padding: 10px;
 }
+
 
 .info-contacto{
     flex-direction: column;
