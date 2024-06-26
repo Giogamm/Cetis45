@@ -106,6 +106,8 @@ body {
   display: none;
 }
 
+
+
 .tecnico-en {
   display: flex;
   justify-content: flex-start;
@@ -113,18 +115,7 @@ body {
 }
 
 .tecnico-en img {
-  margin: 12px 30px;
-  height: 230px;
-  border-radius: 12px;
-}
-.tecnico-en {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
 
-.tecnico-en img {
-  margin: 12px 30px;
   height: 230px;
   border-radius: 12px;
 }
@@ -137,6 +128,17 @@ body {
 /* Sección que solo aparece en dispositivos móviles */
 .desaparecerpc {
   display: block; /* O flex, según el diseño de tu página */
+}
+
+.contenido h2{
+    font-size: 1.7em;
+    font-weight: bold;
+
+    position: relative;
+    display: inline-block;
+    border-top: 2px solid #4d92df;
+    width: 100%;
+    padding-top: 10px;
 }
 
 /* Media query para pantallas de PC (ancho mayor a 768px) */
@@ -305,5 +307,9 @@ body {
     margin: 0;
     height: 230px;
     border-radius: 0;
+  }
+
+  .competencia img{
+  height: 230px;
   }
 }
