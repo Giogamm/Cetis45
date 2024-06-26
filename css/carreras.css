@@ -147,6 +147,39 @@ body {
     height: 600px; /* Altura de 600 píxeles */
 }
 
+/* Estilos del footer */
+.footer {
+  background-color: #404041;
+  color: #f6f6f6;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.imagenFooter img {
+  height: 220px;
+}
+
+.siguenos img {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 10px;
+}
+
+.siguenos a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #f6f6f6;
+  padding-bottom: 0.5rem;
+  transition: color 0.3s;
+}
+
+.siguenos a:hover {
+  color: #4d92df;
+}
+
 /* Media query para pantallas de PC (ancho mayor a 768px) */
 @media (min-width: 768px) {
   .desaparecer-movil {
