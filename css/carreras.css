@@ -141,6 +141,16 @@ body {
     padding-top: 10px;
 }
 
+.pdf{
+
+    display: grid;
+    place-content: center;
+}
+
+.embed{
+        height: 100%;
+    width: 300px;
+}
 /* Media query para pantallas de PC (ancho mayor a 768px) */
 @media (min-width: 768px) {
   .desaparecer-movil {
