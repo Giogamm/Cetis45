@@ -106,8 +106,6 @@ body {
   display: none;
 }
 
-
-
 .tecnico-en {
   display: flex;
   justify-content: flex-start;
@@ -115,7 +113,6 @@ body {
 }
 
 .tecnico-en img {
-
   height: 230px;
   border-radius: 12px;
 }
@@ -130,27 +127,26 @@ body {
   display: block; /* O flex, según el diseño de tu página */
 }
 
-.contenido h2{
-    font-size: 1.7em;
-    font-weight: bold;
+.contenido h2 {
+  font-size: 1.7em;
+  font-weight: bold;
 
-    position: relative;
-    display: inline-block;
-    border-top: 2px solid #4d92df;
-    width: 100%;
-    padding-top: 10px;
+  position: relative;
+  display: inline-block;
+  border-top: 2px solid #4d92df;
+  width: 100%;
+  padding-top: 10px;
 }
 
-.pdf{
-
-    display: grid;
-    place-content: center;
+.pdf {
+  display: grid;
+  place-content: center;
+}
+.mi-pdf {
+    width: 800px; /* Anchura de 800 píxeles */
+    height: 600px; /* Altura de 600 píxeles */
 }
 
-.embed{
-        height: 100%;
-    width: 300px;
-}
 /* Media query para pantallas de PC (ancho mayor a 768px) */
 @media (min-width: 768px) {
   .desaparecer-movil {
@@ -311,7 +307,6 @@ body {
     height: 230px;
     border-radius: 12px;
   }
- 
 
   .tecnico-en img {
     margin: 0;
@@ -319,7 +314,11 @@ body {
     border-radius: 0;
   }
 
-  .competencia img{
-  height: 230px;
+  .competencia img {
+    height: 230px;
+  }
+  .mi-pdf {
+    height: 100%;
+    width: 300px;
   }
 }
