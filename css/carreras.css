@@ -192,7 +192,7 @@ body {
 }
 
 /* Media Query para dispositivos móviles */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .navbar {
     flex-direction: row;
   }
@@ -348,7 +348,7 @@ body {
   }
 
   .competencia img {
-    height: 230px;
+    height: 180px;
   }
   .mi-pdf {
     height: 100%;
