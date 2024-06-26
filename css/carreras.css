@@ -141,6 +141,7 @@ body {
 .pdf {
   display: grid;
   place-content: center;
+  overflow: auto;
 }
 .mi-pdf {
     width: 800px; /* Anchura de 800 píxeles */
@@ -179,6 +180,10 @@ body {
 .siguenos a:hover {
   color: #4d92df;
 }
+
+  .competencia img {
+    height: 450px;
+  }
 
 /* Media query para pantallas de PC (ancho mayor a 768px) */
 @media (min-width: 768px) {
@@ -354,6 +359,11 @@ body {
     height: 100%;
     width: 300px;
   }
+  .ft{
+    margin-top: 20px;
+   height: 320px;
+  
+}
 }
 
 @media (max-width: 1024px){
