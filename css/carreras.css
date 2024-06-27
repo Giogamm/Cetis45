@@ -185,6 +185,17 @@ body {
     height: 450px;
   }
 
+.justificacion .justificacion-contenido ul{
+  margin: 15px;
+  padding-left: 0;
+
+}
+
+.justificacion .justificacion-contenido ul li{
+
+  margin-top: 20px;
+}
+
 /* Media query para pantallas de PC (ancho mayor a 768px) */
 @media (min-width: 768px) {
   .desaparecer-movil {
@@ -201,6 +212,8 @@ body {
   .navbar {
     flex-direction: row;
   }
+
+
 
   .navbar ul {
     display: none;
