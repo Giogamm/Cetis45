@@ -40,6 +40,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
+// si era un enlace externo no me rediriga a la pagina
 document.addEventListener("DOMContentLoaded", function() {
   document.querySelectorAll('#nav-links a').forEach(link => {
     link.addEventListener('click', function(e) {
@@ -53,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const targetElement = document.querySelector(href);
         if (targetElement) {
           // Determina el valor de offset basado en el ancho de la ventana
-          const offset = window.innerWidth <= 768 ? 30 : 120;
+          const offset = window.innerWidth <= 768 ? 30 : 135;
 
           // Calcula la posición del elemento de destino y ajusta por la altura de la barra de navegación
           const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
