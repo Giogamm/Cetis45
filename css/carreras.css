@@ -8,6 +8,10 @@ body {
   box-sizing: border-box;
 }
 
+p{
+  font-size: 18px;
+}
+
 /* Estilos de la barra de navegación */
 .navbar {
   background-color: #404041;
