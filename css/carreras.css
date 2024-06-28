@@ -200,6 +200,12 @@ p{
   margin-top: 20px;
 }
 
+.videoPromo{
+  display: grid;
+  place-content: center;
+  padding-bottom: 10px;
+}
+
 /* Media query para pantallas de PC (ancho mayor a 768px) */
 @media (min-width: 768px) {
   .desaparecer-movil {
@@ -217,7 +223,10 @@ p{
     flex-direction: row;
   }
 
-
+  .videoPromo iframe{
+    height: 220px;
+    width: 320px;
+  }
 
   .navbar ul {
     display: none;
@@ -389,7 +398,6 @@ p{
       
     }
 
-    
   .footer {
     overflow: hidden;
     display: block;
